@@ -4,9 +4,17 @@
   "autoload": {
     "psr-4": {
       "Revonia\\ThrowExceptionBlog\\": "src/"
-    }
+    },
+    "files": [
+      "src/helpers.php"
+    ]
   },
-  "require": {},
+  "require": {
+    "roave/security-advisories": "dev-master",
+    "vlucas/phpdotenv": "^2.4",
+    "phpxmlrpc/phpxmlrpc": "^4.3",
+    "php-di/php-di": "^6.0"
+  },
   "scripts": {
     "publish": "Revonia\\ThrowExceptionBlog\\Publish::run"
   }
